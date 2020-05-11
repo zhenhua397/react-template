@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import '@/pages/home.less';
+import ContentV from '@/components/ContentV';
 
 class Home extends Component {
 	render() {

@@ -12,7 +12,7 @@ const addObserver = (observer, name, callback) => {
 		return;
 	}
 
-	console.log(`notificationCenter 添加通知：`, name, observer);
+	// console.log(`notificationCenter 添加通知：`, name, observer);
 
 	let objects = _observerTables[name];
 	if (!objects || !objects.length) {
@@ -41,7 +41,7 @@ const removeObserver = (observer, name) => {
 		return;
 	}
 
-	console.log(`notificationCenter 删除通知：`, name, observer);
+	// console.log(`notificationCenter 删除通知：`, name, observer);
 
 	// 同一个obj有可能加了N次，故用新数组
 	const newObjects = [];
@@ -53,11 +53,11 @@ const removeObserver = (observer, name) => {
 	}
 	if (newObjects.length !== objects.length) {
 		_observerTables[name] = newObjects;
-		console.log(
-			`notificationCenter 删除通知剩余对象：`,
-			name,
-			_observerTables[name]
-		);
+		// console.log(
+		// 	`notificationCenter 删除通知剩余对象：`,
+		// 	name,
+		// 	_observerTables[name]
+		// );
 	}
 };
 
@@ -79,7 +79,7 @@ const postNotification = (name, notification) => {
 		return;
 	}
 
-	console.log(`notificationCenter 发通知：`, name, result);
+	// console.log(`notificationCenter 发通知：`, name, result);
 
 	objects.forEach(function(object) {
 		const callback = object.callback;
