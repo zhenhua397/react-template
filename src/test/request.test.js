@@ -12,11 +12,3 @@ test('GET请求', () => {
 			expect(err).toBe({});
 		});
 });
-
-// test('POST请求', () => {
-// 	const observer = {};
-// 	NotifyCenter.addObserver(observer, 'AAA', result => {
-// 		expect(result).toBe('hehe');
-// 	});
-// 	NotifyCenter.postNotification('AAA', 'hehe');
-// });
