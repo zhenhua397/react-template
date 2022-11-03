@@ -6,7 +6,7 @@ import Map from '@/components/map';
 class Home extends Component {
 	render() {
 		return (
-			<div className='homePage'>
+			<div className="homePage">
 				<Map />
 			</div>
 		);

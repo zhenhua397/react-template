@@ -18,7 +18,7 @@ class Map extends Component {
 		chart.setOption(option);
 	}
 	render() {
-		return <div class='chart' id='chart'></div>;
+		return <div className="chart" id="chart"></div>;
 	}
 }
 

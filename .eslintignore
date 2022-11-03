@@ -1,0 +1,10 @@
+node_modules/
+public/
+doc/
+.tmp/
+.git/
+dist/
+build/
+test/
+webpack.*
+*.config.js
