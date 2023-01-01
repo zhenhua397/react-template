@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 require('isomorphic-fetch');
 import { stringify } from 'qs';
 
